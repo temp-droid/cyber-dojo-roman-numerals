@@ -30,15 +30,15 @@ public class RomanNumeral {
     private String digit(int arabicNumeral, String digit, String five, String ten) {
         switch (arabicNumeral) {
             case 1: case 2: case 3:
-                return "I".repeat(arabicNumeral);
+                return digit.repeat(arabicNumeral);
             case 4:
-                return "IV";
+                return digit + five;
             case 5:
-                return "V";
+                return five;
             case 6: case 7: case 8:
-                return "V" + "I".repeat(arabicNumeral - 5);
+                return five + digit.repeat(arabicNumeral - 5);
             case 9:
-                return "IX";
+                return digit + ten;
             default:
                 return "";
         }
