@@ -8,10 +8,7 @@ public class RomanNumeral {
     }
     
     public String toString() {
-        if (arabicNumeral == 10) {
-            return "X";
-        }
-        if (arabicNumeral > 10) {
+        if (arabicNumeral >= 10) {
             return digit(arabicNumeral / 10, "X", "L", "C") + digit(arabicNumeral - 10, "I", "V", "X");
         }
         
