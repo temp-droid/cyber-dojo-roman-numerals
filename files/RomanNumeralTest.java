@@ -5,21 +5,8 @@
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.CsvSource;
-
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 public class RomanNumeralTest {
-    
-    @ParameterizedTest
-    @CsvSource(value = {
-        "I:1",
-        "II:2"
-    })
-    void test(String romanNumeralStr, int arabicNumber) {
-        RomanNumeral romanNumeral = new RomanNumeral(arabicNumber);
-        assertEquals(romanNumeralStr, romanNumeral.toString());
-    }
 
     @Test
     void should_return_I_when_value_is_1() {
