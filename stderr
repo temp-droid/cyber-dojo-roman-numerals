@@ -1,0 +1,6 @@
+RomanNumeral.java:39: error: bad operand types for binary operator '-'
+                return five + digit.repeat(arabicNumeral - five);
+                                                         ^
+  first type:  int
+  second type: String
+1 error

@@ -36,7 +36,7 @@ public class RomanNumeral {
             case 5:
                 return five;
             case 6: case 7: case 8:
-                return five + digit.repeat(arabicNumeral - 5);
+                return five + digit.repeat(arabicNumeral - five);
             case 9:
                 return digit + ten;
             default:
