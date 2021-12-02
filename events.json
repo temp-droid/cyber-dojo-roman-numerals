@@ -587,5 +587,21 @@
       9,
       207576
     ]
+  },
+  {
+    "duration": 3.353838,
+    "colour": "green",
+    "predicted": "green",
+    "revert_if_wrong": "on",
+    "index": 37,
+    "time": [
+      2021,
+      12,
+      2,
+      20,
+      14,
+      23,
+      184796
+    ]
   }
 ]

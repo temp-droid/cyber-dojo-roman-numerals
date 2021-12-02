@@ -21,6 +21,10 @@ public class RomanNumeral {
             return "X" + "I".repeat(arabicNumeral - 10);
         }
         
+        return digit(arabicNumeral);
+    }
+    
+    private String digit(int arabicNumeral) {
         if (arabicNumeral < 4) {
             return "I".repeat(arabicNumeral);
         }
