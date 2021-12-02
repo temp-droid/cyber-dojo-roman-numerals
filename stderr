@@ -1,9 +1,5 @@
-RomanNumeral.java:5: error: cannot find symbol
-        this.arabicNumeral = arabicNumeral;
-            ^
-  symbol: variable arabicNumeral
 RomanNumeralTest.java:13: error: incompatible types: int cannot be converted to String
         RomanNumeral romanNumeral = new RomanNumeral(1);
                                                      ^
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-2 errors
+1 error
