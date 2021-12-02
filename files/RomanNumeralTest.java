@@ -103,5 +103,11 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(40);
         assertEquals("XL", romanNumeral.toString());
     }
+    
+    @Test
+    void should_return_L_when_value_is_50() {
+        RomanNumeral romanNumeral = new RomanNumeral(50);
+        assertEquals("L", romanNumeral.toString());
+    }
 
 }
