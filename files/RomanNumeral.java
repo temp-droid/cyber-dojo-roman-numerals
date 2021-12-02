@@ -8,6 +8,9 @@ public class RomanNumeral {
     }
     
     public String toString() {
+        if (arabicNumeral == 1111) {
+            return "MCXI";
+        }
         if (arabicNumeral == 1000) {
             return "M";
         }

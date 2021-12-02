@@ -20,7 +20,7 @@
 |   +-- should return XXX when value is 30 [OK]
 |   +-- should return L when value is 50 [OK]
 |   +-- should return M when value is 1000 [OK]
-|   +-- should return MCXI when value is 1111 [X] expected: <MCXI> but was: <XI>
+|   +-- should return MCXI when value is 1111 [OK]
 |   +-- should return CCC when value is 300 [OK]
 |   +-- should return LXX when value is 70 [OK]
 |   +-- should return CX when value is 110 [OK]
@@ -30,23 +30,7 @@
 |   '-- should return CC when value is 200 [OK]
 '-- JUnit Vintage [OK]
 
-Failures (1):
-  JUnit Jupiter:RomanNumeralTest:should return MCXI when value is 1111
-    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_MCXI_when_value_is_1111', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <MCXI> but was: <XI>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
-       RomanNumeralTest.should_return_MCXI_when_value_is_1111(RomanNumeralTest.java:170)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:564)
-       [...]
-
-Test run finished after 229 ms
+Test run finished after 202 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
@@ -57,6 +41,6 @@ Test run finished after 229 ms
 [         0 tests skipped         ]
 [        27 tests started         ]
 [         0 tests aborted         ]
-[        26 tests successful      ]
-[         1 tests failed          ]
+[        27 tests successful      ]
+[         0 tests failed          ]
 
