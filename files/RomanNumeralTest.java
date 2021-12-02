@@ -31,5 +31,11 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(5);
         assertEquals("V", romanNumeral.toString());
     }
+    
+    @Test
+    void should_return_VI_when_value_is_6() {
+        RomanNumeral romanNumeral = new RomanNumeral(6);
+        assertEquals("VI", romanNumeral.toString());
+    }
 
 }

@@ -235,5 +235,21 @@
       3,
       869292
     ]
+  },
+  {
+    "duration": 3.226973,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 15,
+    "time": [
+      2021,
+      12,
+      2,
+      19,
+      57,
+      51,
+      558347
+    ]
   }
 ]
