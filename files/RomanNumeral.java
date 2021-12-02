@@ -14,6 +14,9 @@ public class RomanNumeral {
         if (arabicNumeral == 10) {
             return "X";
         }
+        if (arabicNumeral == 11) {
+            return "XI";
+        }
         
         if (arabicNumeral < 4) {
             return "I".repeat(arabicNumeral);
