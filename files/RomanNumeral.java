@@ -31,6 +31,8 @@ public class RomanNumeral {
         switch (arabicNumeral) {
             case 1: case 2: case 3:
                 return "I".repeat(arabicNumeral);
+            case 4:
+                return "IV";
         }
         if (arabicNumeral == 9) {
             return "IX";
