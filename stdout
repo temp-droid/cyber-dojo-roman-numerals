@@ -4,20 +4,53 @@
 |   +-- should return I when value is 1 [OK]
 |   +-- should return V when value is 5 [OK]
 |   +-- should return II when value is 2 [OK]
-|   '-- should return IV when value is 4 [OK]
+|   +-- should return IV when value is 4 [OK]
+|   '-- test (String, int) [OK]
+|     +-- [1] I:1 [X] No ParameterResolver registered for parameter [int arg1] in method [void RomanNumeralTest.test(java.lang.String,int)].
+|     '-- [2] II:2 [X] No ParameterResolver registered for parameter [int arg1] in method [void RomanNumeralTest.test(java.lang.String,int)].
 '-- JUnit Vintage [OK]
 
-Test run finished after 117 ms
-[         3 containers found      ]
+Failures (2):
+  JUnit Jupiter:RomanNumeralTest:test (String, int):[1] I:1
+    MethodSource [className = 'RomanNumeralTest', methodName = 'test', methodParameterTypes = 'java.lang.String, int']
+    => org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [int arg1] in method [void RomanNumeralTest.test(java.lang.String,int)].
+       org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:200)
+       org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameters(ExecutableInvoker.java:183)
+       org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameters(ExecutableInvoker.java:144)
+       org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:96)
+       org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+       org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+       org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+       org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+       org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+       org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+       [...]
+  JUnit Jupiter:RomanNumeralTest:test (String, int):[2] II:2
+    MethodSource [className = 'RomanNumeralTest', methodName = 'test', methodParameterTypes = 'java.lang.String, int']
+    => org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [int arg1] in method [void RomanNumeralTest.test(java.lang.String,int)].
+       org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameter(ExecutableInvoker.java:200)
+       org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameters(ExecutableInvoker.java:183)
+       org.junit.jupiter.engine.execution.ExecutableInvoker.resolveParameters(ExecutableInvoker.java:144)
+       org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:96)
+       org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$6(TestMethodTestDescriptor.java:210)
+       org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+       org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:206)
+       org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:131)
+       org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:65)
+       org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+       [...]
+
+Test run finished after 209 ms
+[         4 containers found      ]
 [         0 containers skipped    ]
-[         3 containers started    ]
+[         4 containers started    ]
 [         0 containers aborted    ]
-[         3 containers successful ]
+[         4 containers successful ]
 [         0 containers failed     ]
-[         4 tests found           ]
+[         6 tests found           ]
 [         0 tests skipped         ]
-[         4 tests started         ]
+[         6 tests started         ]
 [         0 tests aborted         ]
 [         4 tests successful      ]
-[         0 tests failed          ]
+[         2 tests failed          ]
 
