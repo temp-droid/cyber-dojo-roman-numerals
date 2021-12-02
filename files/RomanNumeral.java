@@ -17,6 +17,9 @@ public class RomanNumeral {
         if (arabicNumeral == 6) {
             return "VI";
         }
+        if (arabicNumeral == 7) {
+            return "VII";
+        }
         return "IV";   
     }
 }
