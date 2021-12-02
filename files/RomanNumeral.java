@@ -1,9 +1,9 @@
 
 public class RomanNumeral {
     
-    private String arabicNumeral;
+    private int arabicNumeral;
 
-    public RomanNumeral(String arabicNumeral) {
+    public RomanNumeral(int arabicNumeral) {
         this.arabicNumeral = arabicNumeral;
     }
     
