@@ -14,14 +14,8 @@ public class RomanNumeral {
         if (arabicNumeral == 10) {
             return "X";
         }
-        if (arabicNumeral == 11) {
-            return "XI";
-        }
-        if (arabicNumeral == 12) {
-            return "XII";
-        }
-        if (arabicNumeral == 13) {
-            return "XIII";
+        if (arabicNumeral > 10) {
+            return "X" + "I".repeat(arabicNumeral - 10);
         }
         
         if (arabicNumeral < 4) {
