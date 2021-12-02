@@ -2,6 +2,7 @@
 +-- JUnit Jupiter [OK]
 | '-- RomanNumeralTest [OK]
 |   +-- should return IX when value is 9 [OK]
+|   +-- should return XI when value is 11 [X] expected: <XI> but was: <VIIIIII>
 |   +-- should return I when value is 1 [OK]
 |   +-- should return VIII when value is 8 [OK]
 |   +-- should return V when value is 5 [OK]
@@ -12,17 +13,33 @@
 |   '-- should return X when value is 10 [OK]
 '-- JUnit Vintage [OK]
 
-Test run finished after 132 ms
+Failures (1):
+  JUnit Jupiter:RomanNumeralTest:should return XI when value is 11
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_XI_when_value_is_11', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <XI> but was: <VIIIIII>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+       RomanNumeralTest.should_return_XI_when_value_is_11(RomanNumeralTest.java:68)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       [...]
+
+Test run finished after 134 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
 [         0 containers aborted    ]
 [         3 containers successful ]
 [         0 containers failed     ]
-[         9 tests found           ]
+[        10 tests found           ]
 [         0 tests skipped         ]
-[         9 tests started         ]
+[        10 tests started         ]
 [         0 tests aborted         ]
 [         9 tests successful      ]
-[         0 tests failed          ]
+[         1 tests failed          ]
 
