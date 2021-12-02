@@ -43,5 +43,6 @@ public class RomanNumeral {
         if (arabicNumeral > 5) {
             return "V" + "I".repeat(arabicNumeral - 5);
         }
+        return "IV";
     }
 }
