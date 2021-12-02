@@ -8,9 +8,6 @@ public class RomanNumeral {
     }
     
     public String toString() {
-        if (arabicNumeral == 110) {
-            return "CX";
-        }
         if (arabicNumeral >= 100) {
             return digit(arabicNumeral / 100, "C", "D", "M") + digit(arabicNumeral % 100 / 10, "X", "L", "C");
         }
