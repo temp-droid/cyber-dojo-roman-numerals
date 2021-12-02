@@ -157,5 +157,11 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(111);
         assertEquals("CXI", romanNumeral.toString());
     }
+    
+    @Test
+    void should_return_M_when_value_is_1000() {
+        RomanNumeral romanNumeral = new RomanNumeral(1000);
+        assertEquals("M", romanNumeral.toString());
+    }
 
 }
