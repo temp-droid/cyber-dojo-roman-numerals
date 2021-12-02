@@ -2,28 +2,12 @@
 +-- JUnit Jupiter [OK]
 | '-- RomanNumeralTest [OK]
 |   +-- should return I when value is 1 [OK]
-|   +-- should return V when value is 5 [X] expected: <V> but was: <IV>
+|   +-- should return V when value is 5 [OK]
 |   +-- should return II when value is 2 [OK]
 |   '-- should return IV when value is 4 [OK]
 '-- JUnit Vintage [OK]
 
-Failures (1):
-  JUnit Jupiter:RomanNumeralTest:should return V when value is 5
-    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_V_when_value_is_5', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <V> but was: <IV>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
-       RomanNumeralTest.should_return_V_when_value_is_5(RomanNumeralTest.java:32)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:564)
-       [...]
-
-Test run finished after 165 ms
+Test run finished after 117 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
@@ -34,6 +18,6 @@ Test run finished after 165 ms
 [         0 tests skipped         ]
 [         4 tests started         ]
 [         0 tests aborted         ]
-[         3 tests successful      ]
-[         1 tests failed          ]
+[         4 tests successful      ]
+[         0 tests failed          ]
 
