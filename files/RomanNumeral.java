@@ -35,9 +35,6 @@ public class RomanNumeral {
         if (arabicNumeral == 9) {
             return "IX";
         }
-        if (arabicNumeral < 4) {
-            return "I".repeat(arabicNumeral);
-        }
         if (arabicNumeral == 5) {
             return "V";
         }
