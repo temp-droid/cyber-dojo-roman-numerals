@@ -8,17 +8,18 @@ public class RomanNumeral {
     }
     
     public String toString() {
-        if (arabicNumeral < 4) {
-            return "I".repeat(arabicNumeral);
-        }
-        if (arabicNumeral == 5) {
-            return "V";
-        }
         if (arabicNumeral == 9) {
             return "IX";
         }
         if (arabicNumeral == 10) {
             return "X";
+        }
+        
+        if (arabicNumeral < 4) {
+            return "I".repeat(arabicNumeral);
+        }
+        if (arabicNumeral == 5) {
+            return "V";
         }
         if (arabicNumeral > 5) {
             return "V" + "I".repeat(arabicNumeral - 5);
