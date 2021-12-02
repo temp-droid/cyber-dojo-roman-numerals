@@ -12,30 +12,14 @@
 |   +-- should return II when value is 2 [OK]
 |   +-- should return VII when value is 7 [OK]
 |   +-- should return IV when value is 4 [OK]
-|   +-- should return XL when value is 40 [X] expected: <XL> but was: <XXXX>
+|   +-- should return XL when value is 40 [OK]
 |   +-- should return XIII when value is 13 [OK]
 |   +-- should return XX when value is 20 [OK]
 |   +-- should return XXX when value is 30 [OK]
 |   '-- should return X when value is 10 [OK]
 '-- JUnit Vintage [OK]
 
-Failures (1):
-  JUnit Jupiter:RomanNumeralTest:should return XL when value is 40
-    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_XL_when_value_is_40', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <XL> but was: <XXXX>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
-       RomanNumeralTest.should_return_XL_when_value_is_40(RomanNumeralTest.java:104)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:564)
-       [...]
-
-Test run finished after 157 ms
+Test run finished after 197 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
@@ -46,6 +30,6 @@ Test run finished after 157 ms
 [         0 tests skipped         ]
 [        16 tests started         ]
 [         0 tests aborted         ]
-[        15 tests successful      ]
-[         1 tests failed          ]
+[        16 tests successful      ]
+[         0 tests failed          ]
 

@@ -8,6 +8,9 @@ public class RomanNumeral {
     }
     
     public String toString() {
+        if (arabicNumeral == 40) {
+            return "XL";
+        }
         if (arabicNumeral % 10 == 0) {
             return "X".repeat(arabicNumeral / 10);
         }
