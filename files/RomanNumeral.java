@@ -28,12 +28,6 @@ public class RomanNumeral {
     }
     
     private String digit(int arabicNumeral) {
-        switch (arabicNumeral) {
-            case 1: case 2: case 3:
-                return "I".repeat(arabicNumeral);
-            default:
-                return "";
-        }
         if (arabicNumeral == 9) {
             return "IX";
         }

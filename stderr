@@ -1,4 +1,0 @@
-RomanNumeral.java:37: error: unreachable statement
-        if (arabicNumeral == 9) {
-        ^
-1 error
