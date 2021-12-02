@@ -121,5 +121,11 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(70);
         assertEquals("LXX", romanNumeral.toString());
     }
+    
+    @Test
+    void should_return_LXXX_when_value_is_80() {
+        RomanNumeral romanNumeral = new RomanNumeral(80);
+        assertEquals("LXXX", romanNumeral.toString());
+    }
 
 }
