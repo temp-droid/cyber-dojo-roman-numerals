@@ -14,15 +14,9 @@ public class RomanNumeral {
         if (arabicNumeral == 5) {
             return "V";
         }
-        if (arabicNumeral == 6) {
-            return "VI";
+        if (arabicNumeral > 5) {
+            return "V" + "I".repeat(arabicNumeral);
         }
-        if (arabicNumeral == 7) {
-            return "VII";
-        }
-        if (arabicNumeral == 8) {
-            return "VIII";
-        }
-        return "IV";   
+        return "IV";
     }
 }
