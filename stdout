@@ -1,7 +1,7 @@
 .
 +-- JUnit Jupiter [OK]
 | '-- RomanNumeralTest [OK]
-|   +-- should return LXXX when value is 80 [OK]
+|   +-- should return LXXX when value is 80 [X] expected: <LXXX> but was: <XXXXXXXX>
 |   +-- should return IX when value is 9 [OK]
 |   +-- should return XI when value is 11 [OK]
 |   +-- should return XIV when value is 14 [OK]
@@ -13,17 +13,89 @@
 |   +-- should return II when value is 2 [OK]
 |   +-- should return VII when value is 7 [OK]
 |   +-- should return IV when value is 4 [OK]
-|   +-- should return XL when value is 40 [OK]
+|   +-- should return XL when value is 40 [X] expected: <XL> but was: <XXXX>
 |   +-- should return XIII when value is 13 [OK]
 |   +-- should return XX when value is 20 [OK]
 |   +-- should return XXX when value is 30 [OK]
-|   +-- should return L when value is 50 [OK]
-|   +-- should return LXX when value is 70 [OK]
+|   +-- should return L when value is 50 [X] expected: <L> but was: <XXXXX>
+|   +-- should return LXX when value is 70 [X] expected: <LXX> but was: <XXXXXXX>
 |   +-- should return X when value is 10 [OK]
-|   '-- should return LX when value is 60 [OK]
+|   '-- should return LX when value is 60 [X] expected: <LX> but was: <XXXXXX>
 '-- JUnit Vintage [OK]
 
-Test run finished after 134 ms
+Failures (5):
+  JUnit Jupiter:RomanNumeralTest:should return LXXX when value is 80
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_LXXX_when_value_is_80', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <LXXX> but was: <XXXXXXXX>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+       RomanNumeralTest.should_return_LXXX_when_value_is_80(RomanNumeralTest.java:128)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       [...]
+  JUnit Jupiter:RomanNumeralTest:should return XL when value is 40
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_XL_when_value_is_40', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <XL> but was: <XXXX>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+       RomanNumeralTest.should_return_XL_when_value_is_40(RomanNumeralTest.java:104)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       [...]
+  JUnit Jupiter:RomanNumeralTest:should return L when value is 50
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_L_when_value_is_50', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <L> but was: <XXXXX>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+       RomanNumeralTest.should_return_L_when_value_is_50(RomanNumeralTest.java:110)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       [...]
+  JUnit Jupiter:RomanNumeralTest:should return LXX when value is 70
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_LXX_when_value_is_70', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <LXX> but was: <XXXXXXX>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+       RomanNumeralTest.should_return_LXX_when_value_is_70(RomanNumeralTest.java:122)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       [...]
+  JUnit Jupiter:RomanNumeralTest:should return LX when value is 60
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_LX_when_value_is_60', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <LX> but was: <XXXXXX>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+       RomanNumeralTest.should_return_LX_when_value_is_60(RomanNumeralTest.java:116)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       [...]
+
+Test run finished after 174 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
@@ -34,6 +106,6 @@ Test run finished after 134 ms
 [         0 tests skipped         ]
 [        20 tests started         ]
 [         0 tests aborted         ]
-[        20 tests successful      ]
-[         0 tests failed          ]
+[        15 tests successful      ]
+[         5 tests failed          ]
 
