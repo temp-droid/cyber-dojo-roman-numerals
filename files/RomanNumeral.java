@@ -18,7 +18,7 @@ public class RomanNumeral {
             return "X";
         }
         if (arabicNumeral > 10) {
-            return "X" + "I".repeat(arabicNumeral - 10);
+            return "X" + digit(arabicNumeral - 10);
         }
         
         return digit(arabicNumeral);

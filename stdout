@@ -16,7 +16,7 @@
 |   '-- should return X when value is 10 [OK]
 '-- JUnit Vintage [OK]
 
-Test run finished after 147 ms
+Test run finished after 131 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
