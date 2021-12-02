@@ -1,7 +1,7 @@
 .
 +-- JUnit Jupiter [OK]
 | '-- RomanNumeralTest [OK]
-|   +-- should return LXXX when value is 80 [X] expected: <LXXX> but was: <XXXXXXXX>
+|   +-- should return LXXX when value is 80 [OK]
 |   +-- should return IX when value is 9 [OK]
 |   +-- should return XI when value is 11 [OK]
 |   +-- should return XIV when value is 14 [OK]
@@ -23,23 +23,7 @@
 |   '-- should return LX when value is 60 [OK]
 '-- JUnit Vintage [OK]
 
-Failures (1):
-  JUnit Jupiter:RomanNumeralTest:should return LXXX when value is 80
-    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_LXXX_when_value_is_80', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <LXXX> but was: <XXXXXXXX>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
-       RomanNumeralTest.should_return_LXXX_when_value_is_80(RomanNumeralTest.java:128)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:564)
-       [...]
-
-Test run finished after 165 ms
+Test run finished after 169 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
@@ -50,6 +34,6 @@ Test run finished after 165 ms
 [         0 tests skipped         ]
 [        20 tests started         ]
 [         0 tests aborted         ]
-[        19 tests successful      ]
-[         1 tests failed          ]
+[        20 tests successful      ]
+[         0 tests failed          ]
 
