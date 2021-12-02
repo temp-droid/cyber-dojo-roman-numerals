@@ -67,5 +67,11 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(11);
         assertEquals("XI", romanNumeral.toString());
     }
+    
+    @Test
+    void should_return_XII_when_value_is_12() {
+        RomanNumeral romanNumeral = new RomanNumeral(12);
+        assertEquals("XII", romanNumeral.toString());
+    }
 
 }
