@@ -990,5 +990,21 @@
       21,
       885561
     ]
+  },
+  {
+    "duration": 2.138537,
+    "colour": "amber",
+    "predicted": "green",
+    "revert_if_wrong": "on",
+    "index": 62,
+    "time": [
+      2021,
+      12,
+      2,
+      20,
+      30,
+      12,
+      462955
+    ]
   }
 ]

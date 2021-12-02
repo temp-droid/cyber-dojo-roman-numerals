@@ -1,0 +1,6 @@
+RomanNumeral.java:12: error: cannot find symbol
+            return "L" + "X".repeat((arabicNumber - 50) / 10);
+                                     ^
+  symbol:   variable arabicNumber
+  location: class RomanNumeral
+1 error
