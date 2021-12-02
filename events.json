@@ -924,5 +924,21 @@
       34,
       165822
     ]
+  },
+  {
+    "duration": 3.078811,
+    "colour": "red",
+    "predicted": "green",
+    "revert_if_wrong": "on",
+    "index": 58,
+    "time": [
+      2021,
+      12,
+      2,
+      20,
+      28,
+      29,
+      291425
+    ]
   }
 ]

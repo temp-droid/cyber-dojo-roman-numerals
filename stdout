@@ -1,7 +1,7 @@
 .
 +-- JUnit Jupiter [OK]
 | '-- RomanNumeralTest [OK]
-|   +-- should return LXXX when value is 80 [OK]
+|   +-- should return LXXX when value is 80 [X] count is negative: -5
 |   +-- should return IX when value is 9 [OK]
 |   +-- should return XI when value is 11 [OK]
 |   +-- should return XIV when value is 14 [OK]
@@ -18,12 +18,56 @@
 |   +-- should return XX when value is 20 [OK]
 |   +-- should return XXX when value is 30 [OK]
 |   +-- should return L when value is 50 [OK]
-|   +-- should return LXX when value is 70 [OK]
+|   +-- should return LXX when value is 70 [X] count is negative: -5
 |   +-- should return X when value is 10 [OK]
-|   '-- should return LX when value is 60 [OK]
+|   '-- should return LX when value is 60 [X] count is negative: -5
 '-- JUnit Vintage [OK]
 
-Test run finished after 169 ms
+Failures (3):
+  JUnit Jupiter:RomanNumeralTest:should return LXXX when value is 80
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_LXXX_when_value_is_80', methodParameterTypes = '']
+    => java.lang.IllegalArgumentException: count is negative: -5
+       java.base/java.lang.String.repeat(String.java:3586)
+       RomanNumeral.toString(RomanNumeral.java:12)
+       RomanNumeralTest.should_return_LXXX_when_value_is_80(RomanNumeralTest.java:128)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+       [...]
+  JUnit Jupiter:RomanNumeralTest:should return LXX when value is 70
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_LXX_when_value_is_70', methodParameterTypes = '']
+    => java.lang.IllegalArgumentException: count is negative: -5
+       java.base/java.lang.String.repeat(String.java:3586)
+       RomanNumeral.toString(RomanNumeral.java:12)
+       RomanNumeralTest.should_return_LXX_when_value_is_70(RomanNumeralTest.java:122)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+       [...]
+  JUnit Jupiter:RomanNumeralTest:should return LX when value is 60
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_LX_when_value_is_60', methodParameterTypes = '']
+    => java.lang.IllegalArgumentException: count is negative: -5
+       java.base/java.lang.String.repeat(String.java:3586)
+       RomanNumeral.toString(RomanNumeral.java:12)
+       RomanNumeralTest.should_return_LX_when_value_is_60(RomanNumeralTest.java:116)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:688)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+       [...]
+
+Test run finished after 154 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
@@ -34,6 +78,6 @@ Test run finished after 169 ms
 [         0 tests skipped         ]
 [        20 tests started         ]
 [         0 tests aborted         ]
-[        20 tests successful      ]
-[         0 tests failed          ]
+[        17 tests successful      ]
+[         3 tests failed          ]
 
