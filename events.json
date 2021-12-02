@@ -107,5 +107,21 @@
       24,
       190056
     ]
+  },
+  {
+    "duration": 3.229862,
+    "colour": "red",
+    "predicted": "red",
+    "revert_if_wrong": "off",
+    "index": 7,
+    "time": [
+      2021,
+      12,
+      2,
+      19,
+      45,
+      23,
+      476874
+    ]
   }
 ]
