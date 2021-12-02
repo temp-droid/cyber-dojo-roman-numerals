@@ -2,7 +2,7 @@
 +-- JUnit Jupiter [OK]
 | '-- RomanNumeralTest [OK]
 |   +-- should return I when value is 1 [OK]
-|   +-- should return VIII when value is 8 [X] expected: <VIII> but was: <IV>
+|   +-- should return VIII when value is 8 [OK]
 |   +-- should return V when value is 5 [OK]
 |   +-- should return VI when value is 6 [OK]
 |   +-- should return II when value is 2 [OK]
@@ -10,23 +10,7 @@
 |   '-- should return IV when value is 4 [OK]
 '-- JUnit Vintage [OK]
 
-Failures (1):
-  JUnit Jupiter:RomanNumeralTest:should return VIII when value is 8
-    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_VIII_when_value_is_8', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <VIII> but was: <IV>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
-       RomanNumeralTest.should_return_VIII_when_value_is_8(RomanNumeralTest.java:50)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:564)
-       [...]
-
-Test run finished after 142 ms
+Test run finished after 124 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
@@ -37,6 +21,6 @@ Test run finished after 142 ms
 [         0 tests skipped         ]
 [         7 tests started         ]
 [         0 tests aborted         ]
-[         6 tests successful      ]
-[         1 tests failed          ]
+[         7 tests successful      ]
+[         0 tests failed          ]
 

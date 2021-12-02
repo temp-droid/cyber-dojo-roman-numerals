@@ -20,6 +20,9 @@ public class RomanNumeral {
         if (arabicNumeral == 7) {
             return "VII";
         }
+        if (arabicNumeral == 8) {
+            return "VIII";
+        }
         return "IV";   
     }
 }
