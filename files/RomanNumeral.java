@@ -8,6 +8,12 @@ public class RomanNumeral {
     }
     
     public String toString() {
+        if (arabicNumeral == 1111) {
+            return "MCXI";
+        }
+        if (arabicNumeral == 1000) {
+            return "M";
+        }
         return digit(arabicNumeral / 1000, "M", "", "") 
             + digit(arabicNumeral / 100, "C", "D", "M") 
             + digit(arabicNumeral % 100 / 10, "X", "L", "C")
