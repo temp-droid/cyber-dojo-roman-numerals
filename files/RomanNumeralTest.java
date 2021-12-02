@@ -43,5 +43,11 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(7);
         assertEquals("VII", romanNumeral.toString());
     }
+    
+    @Test
+    void should_return_VIII_when_value_is_8() {
+        RomanNumeral romanNumeral = new RomanNumeral(8);
+        assertEquals("VIII", romanNumeral.toString());
+    }
 
 }
