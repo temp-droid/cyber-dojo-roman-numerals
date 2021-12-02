@@ -20,23 +20,40 @@
 |   +-- should return L when value is 50 [OK]
 |   +-- should return CCC when value is 300 [OK]
 |   +-- should return LXX when value is 70 [OK]
+|   +-- should return CX when value is 110 [X] expected: <CX> but was: <C>
 |   +-- should return C when value is 100 [OK]
 |   +-- should return X when value is 10 [OK]
 |   +-- should return LX when value is 60 [OK]
 |   '-- should return CC when value is 200 [OK]
 '-- JUnit Vintage [OK]
 
-Test run finished after 215 ms
+Failures (1):
+  JUnit Jupiter:RomanNumeralTest:should return CX when value is 110
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_CX_when_value_is_110', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <CX> but was: <C>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+       RomanNumeralTest.should_return_CX_when_value_is_110(RomanNumeralTest.java:152)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       [...]
+
+Test run finished after 194 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
 [         0 containers aborted    ]
 [         3 containers successful ]
 [         0 containers failed     ]
-[        23 tests found           ]
+[        24 tests found           ]
 [         0 tests skipped         ]
-[        23 tests started         ]
+[        24 tests started         ]
 [         0 tests aborted         ]
 [        23 tests successful      ]
-[         0 tests failed          ]
+[         1 tests failed          ]
 
