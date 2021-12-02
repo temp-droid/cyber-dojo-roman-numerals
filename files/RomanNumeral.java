@@ -8,14 +8,8 @@ public class RomanNumeral {
     }
     
     public String toString() {
-        if (arabicNumeral == 30) {
-            return "XXX";
-        }
-        if (arabicNumeral == 20) {
-            return "XX";
-        }
-        if (arabicNumeral == 10) {
-            return "X";
+        if (arabicNumeral % 10 == 0) {
+            return "X" * arabicNumeral / 10;
         }
         if (arabicNumeral > 10) {
             return "X" + digit(arabicNumeral - 10);
