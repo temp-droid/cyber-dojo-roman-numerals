@@ -21,13 +21,13 @@ public class RomanNumeral {
             return "X".repeat(arabicNumeral / 10);
         }
         if (arabicNumeral > 10) {
-            return "X" + digit(arabicNumeral - 10);
+            return "X" + digit(arabicNumeral - 10, "I", "V", "X");
         }
         
-        return digit(arabicNumeral);
+        return digit(arabicNumeral, "I", "V", "X");
     }
     
-    private String digit(int arabicNumeral) {
+    private String digit(int arabicNumeral, String digit, String five, String ten) {
         switch (arabicNumeral) {
             case 1: case 2: case 3:
                 return "I".repeat(arabicNumeral);
