@@ -50,10 +50,16 @@ public class RomanNumeralTest {
         assertEquals("VIII", romanNumeral.toString());
     }
     
-        @Test
+    @Test
     void should_return_IX_when_value_is_9() {
         RomanNumeral romanNumeral = new RomanNumeral(9);
         assertEquals("IX", romanNumeral.toString());
+    }
+    
+    @Test
+    void should_return_X_when_value_is_10() {
+        RomanNumeral romanNumeral = new RomanNumeral(10);
+        assertEquals("X", romanNumeral.toString());
     }
 
 }
