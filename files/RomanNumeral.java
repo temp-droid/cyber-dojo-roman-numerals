@@ -11,13 +11,10 @@ public class RomanNumeral {
         if (arabicNumeral == 111) {
             return "CXI";
         }
-        if (arabicNumeral >= 100) {
+        if (arabicNumeral >= 10) {
             return digit(arabicNumeral / 100, "C", "D", "M") 
                 + digit(arabicNumeral % 100 / 10, "X", "L", "C")
                 + digit(arabicNumeral % 10, "I", "V", "X");
-        }
-        if (arabicNumeral >= 10) {
-            return digit(arabicNumeral / 10, "X", "L", "C") + digit(arabicNumeral % 10, "I", "V", "X");
         }
         
         return digit(arabicNumeral, "I", "V", "X");
