@@ -14,20 +14,37 @@
 |   +-- should return IV when value is 4 [OK]
 |   +-- should return XIII when value is 13 [OK]
 |   +-- should return XX when value is 20 [OK]
+|   +-- should return XXX when value is 30 [X] expected: <XXX> but was: <XVIIIIIIIIIIIIIII>
 |   '-- should return X when value is 10 [OK]
 '-- JUnit Vintage [OK]
 
-Test run finished after 250 ms
+Failures (1):
+  JUnit Jupiter:RomanNumeralTest:should return XXX when value is 30
+    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_XXX_when_value_is_30', methodParameterTypes = '']
+    => org.opentest4j.AssertionFailedError: expected: <XXX> but was: <XVIIIIIIIIIIIIIII>
+       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
+       RomanNumeralTest.should_return_XXX_when_value_is_30(RomanNumeralTest.java:98)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+       java.base/java.lang.reflect.Method.invoke(Method.java:564)
+       [...]
+
+Test run finished after 154 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
 [         0 containers aborted    ]
 [         3 containers successful ]
 [         0 containers failed     ]
-[        14 tests found           ]
+[        15 tests found           ]
 [         0 tests skipped         ]
-[        14 tests started         ]
+[        15 tests started         ]
 [         0 tests aborted         ]
 [        14 tests successful      ]
-[         0 tests failed          ]
+[         1 tests failed          ]
 
