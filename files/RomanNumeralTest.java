@@ -19,4 +19,10 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(2);
         assertEquals("II", romanNumeral.toString());
     }
+    
+    @Test
+    void should_return_IV_when_value_is_4() {
+        RomanNumeral romanNumeral = new RomanNumeral(4);
+        assertEquals("IV", romanNumeral.toString());
+    }
 }
