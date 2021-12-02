@@ -35,12 +35,11 @@ public class RomanNumeral {
                 return "IV";
             case 5:
                 return "V";
+            case 6: case 7: case 8:
+                return "V" + "I".repeat(arabicNumeral - 5);
         }
         if (arabicNumeral == 9) {
             return "IX";
-        }
-        if (arabicNumeral > 5) {
-            return "V" + "I".repeat(arabicNumeral - 5);
         }
         return "";
     }
