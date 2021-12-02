@@ -1718,5 +1718,21 @@
       16,
       981385
     ]
+  },
+  {
+    "duration": 3.335746,
+    "colour": "green",
+    "predicted": "green",
+    "revert_if_wrong": "on",
+    "index": 107,
+    "time": [
+      2021,
+      12,
+      2,
+      20,
+      59,
+      45,
+      171900
+    ]
   }
 ]
