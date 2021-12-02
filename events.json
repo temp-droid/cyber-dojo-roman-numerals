@@ -844,5 +844,21 @@
       40,
       788289
     ]
+  },
+  {
+    "duration": 3.330827,
+    "colour": "green",
+    "predicted": "green",
+    "revert_if_wrong": "on",
+    "index": 53,
+    "time": [
+      2021,
+      12,
+      2,
+      20,
+      25,
+      8,
+      271510
+    ]
   }
 ]
