@@ -11,12 +11,6 @@ public class RomanNumeral {
         if (arabicNumeral > 50) {
             return "L" + "X".repeat((arabicNumeral - 50) / 10);
         }
-        if (arabicNumeral == 70) {
-            return "LXX";
-        }
-        if (arabicNumeral == 60) {
-            return "LX";
-        }
         if (arabicNumeral == 50) {
             return "L";
         }
