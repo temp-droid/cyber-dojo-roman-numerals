@@ -1558,5 +1558,21 @@
       54,
       222091
     ]
+  },
+  {
+    "duration": 3.400153,
+    "colour": "green",
+    "predicted": "green",
+    "revert_if_wrong": "on",
+    "index": 97,
+    "time": [
+      2021,
+      12,
+      2,
+      20,
+      52,
+      13,
+      460300
+    ]
   }
 ]

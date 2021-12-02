@@ -22,26 +22,10 @@
 |   +-- should return C when value is 100 [OK]
 |   +-- should return X when value is 10 [OK]
 |   +-- should return LX when value is 60 [OK]
-|   '-- should return CC when value is 200 [X] expected: <CC> but was: <>
+|   '-- should return CC when value is 200 [OK]
 '-- JUnit Vintage [OK]
 
-Failures (1):
-  JUnit Jupiter:RomanNumeralTest:should return CC when value is 200
-    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_CC_when_value_is_200', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <CC> but was: <>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
-       RomanNumeralTest.should_return_CC_when_value_is_200(RomanNumeralTest.java:140)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:564)
-       [...]
-
-Test run finished after 186 ms
+Test run finished after 164 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
@@ -52,6 +36,6 @@ Test run finished after 186 ms
 [         0 tests skipped         ]
 [        22 tests started         ]
 [         0 tests aborted         ]
-[        21 tests successful      ]
-[         1 tests failed          ]
+[        22 tests successful      ]
+[         0 tests failed          ]
 

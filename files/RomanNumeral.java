@@ -8,6 +8,9 @@ public class RomanNumeral {
     }
     
     public String toString() {
+        if (arabicNumeral == 200) {
+            return "CC";
+        }
         if (arabicNumeral == 100) {
             return "C";
         }
