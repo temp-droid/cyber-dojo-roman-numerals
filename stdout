@@ -3,7 +3,7 @@
 | '-- RomanNumeralTest [OK]
 |   +-- should return IX when value is 9 [OK]
 |   +-- should return XI when value is 11 [OK]
-|   +-- should return XII when value is 12 [X] expected: <XII> but was: <VIIIIIII>
+|   +-- should return XII when value is 12 [OK]
 |   +-- should return I when value is 1 [OK]
 |   +-- should return VIII when value is 8 [OK]
 |   +-- should return V when value is 5 [OK]
@@ -14,23 +14,7 @@
 |   '-- should return X when value is 10 [OK]
 '-- JUnit Vintage [OK]
 
-Failures (1):
-  JUnit Jupiter:RomanNumeralTest:should return XII when value is 12
-    MethodSource [className = 'RomanNumeralTest', methodName = 'should_return_XII_when_value_is_12', methodParameterTypes = '']
-    => org.opentest4j.AssertionFailedError: expected: <XII> but was: <VIIIIIII>
-       org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-       org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-       org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-       org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1124)
-       RomanNumeralTest.should_return_XII_when_value_is_12(RomanNumeralTest.java:74)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-       java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-       java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-       java.base/java.lang.reflect.Method.invoke(Method.java:564)
-       [...]
-
-Test run finished after 154 ms
+Test run finished after 144 ms
 [         3 containers found      ]
 [         0 containers skipped    ]
 [         3 containers started    ]
@@ -41,6 +25,6 @@ Test run finished after 154 ms
 [         0 tests skipped         ]
 [        11 tests started         ]
 [         0 tests aborted         ]
-[        10 tests successful      ]
-[         1 tests failed          ]
+[        11 tests successful      ]
+[         0 tests failed          ]
 
