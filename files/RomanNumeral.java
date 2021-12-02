@@ -24,10 +24,10 @@ public class RomanNumeral {
             return "X" + digit(arabicNumeral - 10);
         }
         
-        return digit(arabicNumeral, "I", "V", "X");
+        return digit(arabicNumeral);
     }
     
-    private String digit(int arabicNumeral, String digit, String five, String ten) {
+    private String digit(int arabicNumeral) {
         switch (arabicNumeral) {
             case 1: case 2: case 3:
                 return "I".repeat(arabicNumeral);

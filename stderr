@@ -1,7 +1,0 @@
-RomanNumeral.java:24: error: method digit in class RomanNumeral cannot be applied to given types;
-            return "X" + digit(arabicNumeral - 10);
-                         ^
-  required: int,String,String,String
-  found:    int
-  reason: actual and formal argument lists differ in length
-1 error
