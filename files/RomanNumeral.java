@@ -33,6 +33,8 @@ public class RomanNumeral {
                 return "I".repeat(arabicNumeral);
             case 4:
                 return "IV";
+            case 5:
+                return "V";
         }
         if (arabicNumeral == 9) {
             return "IX";
