@@ -15,7 +15,7 @@ public class RomanNumeral {
             return digit(arabicNumeral / 100, "C", "D", "M");
         }
         if (arabicNumeral >= 10) {
-            return digit(arabicNumeral / 10, "X", "L", "C") + digit(arabicNumeral - 10, "I", "V", "X");
+            return digit(arabicNumeral / 10, "X", "L", "C") + digit(arabicNumeral % 10, "I", "V", "X");
         }
         
         return digit(arabicNumeral, "I", "V", "X");
