@@ -133,5 +133,11 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(100);
         assertEquals("C", romanNumeral.toString());
     }
+    
+    @Test
+    void should_return_CC_when_value_is_200() {
+        RomanNumeral romanNumeral = new RomanNumeral(200);
+        assertEquals("CC", romanNumeral.toString());
+    }
 
 }
