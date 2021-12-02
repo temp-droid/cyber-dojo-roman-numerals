@@ -12,7 +12,7 @@ public class RomanNumeral {
             return "CX";
         }
         if (arabicNumeral >= 100) {
-            return digit(arabicNumeral / 100, "C", "D", "M");
+            return digit(arabicNumeral / 100, "C", "D", "M") + digit(arabicNumeral % 100 / 10, "X", "L", "C");
         }
         if (arabicNumeral >= 10) {
             return digit(arabicNumeral / 10, "X", "L", "C") + digit(arabicNumeral % 10, "I", "V", "X");
