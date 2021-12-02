@@ -1,6 +1,0 @@
-RomanNumeral.java:12: error: bad operand types for binary operator '*'
-            return "X" * arabicNumeral / 10;
-                       ^
-  first type:  String
-  second type: int
-1 error
