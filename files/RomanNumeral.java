@@ -8,18 +8,6 @@ public class RomanNumeral {
     }
     
     public String toString() {
-        if (arabicNumeral > 50) {
-            return "L" + "X".repeat((arabicNumeral - 50) / 10);
-        }
-        if (arabicNumeral == 50) {
-            return "L";
-        }
-        if (arabicNumeral == 40) {
-            return "XL";
-        }
-        if (arabicNumeral % 10 == 0) {
-            return "X".repeat(arabicNumeral / 10);
-        }
         if (arabicNumeral > 10) {
             return digit(arabicNumeral / 10, "X", "L", "C") + digit(arabicNumeral - 10, "I", "V", "X");
         }
