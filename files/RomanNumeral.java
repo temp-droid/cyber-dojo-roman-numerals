@@ -39,7 +39,8 @@ public class RomanNumeral {
                 return "V" + "I".repeat(arabicNumeral - 5);
             case 9:
                 return "IX";
+            default:
+                return "";
         }
-        return "";
     }
 }
