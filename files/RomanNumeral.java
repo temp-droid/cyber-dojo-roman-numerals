@@ -8,9 +8,6 @@ public class RomanNumeral {
     }
     
     public String toString() {
-        if (arabicNumeral == 9) {
-            return "IX";
-        }
         if (arabicNumeral == 10) {
             return "X";
         }
@@ -22,6 +19,9 @@ public class RomanNumeral {
     }
     
     private String digit(int arabicNumeral) {
+        if (arabicNumeral == 9) {
+            return "IX";
+        }
         if (arabicNumeral < 4) {
             return "I".repeat(arabicNumeral);
         }
