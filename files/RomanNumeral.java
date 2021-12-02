@@ -37,9 +37,8 @@ public class RomanNumeral {
                 return "V";
             case 6: case 7: case 8:
                 return "V" + "I".repeat(arabicNumeral - 5);
-        }
-        if (arabicNumeral == 9) {
-            return "IX";
+            case 9:
+                return "IX";
         }
         return "";
     }
