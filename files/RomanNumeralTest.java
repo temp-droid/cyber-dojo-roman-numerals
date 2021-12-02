@@ -79,5 +79,11 @@ public class RomanNumeralTest {
         RomanNumeral romanNumeral = new RomanNumeral(13);
         assertEquals("XIII", romanNumeral.toString());
     }
+    
+    @Test
+    void should_return_XIV_when_value_is_14() {
+        RomanNumeral romanNumeral = new RomanNumeral(14);
+        assertEquals("XIV", romanNumeral.toString());
+    }
 
 }
